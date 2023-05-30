@@ -3,11 +3,77 @@
 {% block title %}{% endblock %}
 
 {% block body %}
-    <link rel="stylesheet" href="{{ 'css/accueil.css' }}">
-    <div class="background">
+    <div id="background">
         <div class="grostitre">
             <h1>Allan chiron</h1>
             <h3>Bienvenue sur mon porte folio</h3>
+        </div>
+    </div>
+
+    <div id="apropos">
+        <div class="titrephoto">
+            <div class="text">
+                A propos de moi
+            </div>
+            <div class="photo"></div>
+        </div>
+        <div class="info">
+            Je m’appelle Allan Chiron,  je suis actuellement en BTS SIO (Services Informatiques aux Organisations) spécialité SLAM (Solutions logicielles et applications métiers) au Lycée Savary de Mauléon au Sable d'Olonne.
+
+            Je suis motivé et rigoureux, j'aime le travail en équipe et je suis passionné par le domaine de l'informatique
+            <a  class="btn_cv" href="{{ path('cv') }}">Télécharger mon CV</a>
+        </div>
+    </div>
+    <div id="formation">
+        <div class="titreformation">
+                Formation
+        </div>
+        <div class="infoformation">
+            <div class="infoleft">
+                <div class="dateville">
+                    2022 - 2023
+                    <br>
+                    Les Sables d’Olonne
+                </div>
+                <div class="dateville">
+                    2021 - 2022
+                    <br>
+                    Les Sables d’Olonne
+                </div>
+                <div class="dateville">
+                    2019 - 2021
+                    <br>
+                    Saint-Laurent sur Sèvre
+                </div>
+                <div class="dateville">
+                    2018-2019
+                    <br>
+                    Saint-Laurent sur Sèvre
+                </div>
+            </div>
+            <div class="ligne"></div>
+            <div class="inforight">
+                <div class="etablissement">
+                    2ème année de BTS SIO ( Service aux Organisations )
+                    <br>
+                    Lycée Savary de Mauléon
+                </div>
+                <div class="etablissement">
+                    1ère année de BTS SIO ( Service aux Organisations )
+                    <br>
+                    Lycée Savary de Mauléon
+                </div>
+                <div class="etablissement">
+                    Baccalauréat, Sciences et Technologies de l'Industrie et du Développement Durable
+                    <br>
+                    Lycée Saint-Gabriel
+                </div>
+                <div class="etablissement">
+                    Baccalauréat, Sciences et Technologies de l'Industrie et du Développement Durable
+                    <br>
+                    Lycée Saint-Gabriel
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
