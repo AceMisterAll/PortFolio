@@ -1,0 +1,94 @@
+#background{
+    background-image: url('../../public/img/cartemere.gif');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .grostitre{
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
+
+#apropos{
+    color: #FFFFFF;
+    display: flex;
+    height: 100vh;
+
+    .titrephoto{
+        width: 50%;
+
+        .text{
+            font-size: 56px;
+            margin: 7rem 0 1rem 8rem ;
+        }
+
+        .photo{
+            background-image: url("../../public/img/CHIRON_Allan.jpg");
+            width: 47%;
+            height: 54%;
+            margin: 5rem 0 0 13rem;
+            text-align: center;
+            background-size: cover;
+        }
+    }
+
+    .info{
+        width: 40%;
+        margin : 15rem 5rem 0 0;
+        font-size: 20px;
+
+        .btn_cv{
+            display: flex;
+            background-color: #FFFFFF;
+            color: #000000;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 3rem 0 0 0;
+            width: fit-content;
+            text-decoration: none;
+        }
+    }
+}
+
+#formation{
+    display: flex;
+    color: #FFFFFF;
+    height: 100vh;
+
+    .titreformation{
+        width: 30%;
+        font-size: 56px;
+        margin: 7rem 0 1rem 8rem ;
+    }
+
+    .infoformation{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        margin: 12rem 0 1rem 0;
+        font-size: 1.25rem ;
+
+        .infoleft, .inforight{
+            display: inline-block;
+            vertical-align: top;
+
+            div{
+                margin: 0 3rem 3rem 0;
+            }
+        }
+
+        .ligne{
+            width: 2px;
+            height: 70%;
+            background-color: red;
+            margin: 0 3rem 2rem 0;
+        }
+    }
+}
