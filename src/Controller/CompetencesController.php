@@ -6,12 +6,12 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class BtsSioController extends AbstractController
+class CompetencesController extends AbstractController
 {
-    #[Route('/btssio', name: 'btssio')]
+    #[Route('/competences', name: 'competences')]
     public function index(): Response
     {
-        return $this->render('bts_sio/btssio.html.twig', [
+        return $this->render('competences/comptences.html.twig', [
         ]);
     }
 }

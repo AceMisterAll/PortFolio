@@ -1,0 +1,80 @@
+#mescompetences {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  align-items: center;
+
+  .descriptioncompetences {
+	color: #fff;
+	font-size: 2em;
+	width: 70%;
+	background-color: #141416;
+	padding: 0 5rem;
+
+	h6 {
+	  font-family: open sans-serif;
+	}
+  }
+}
+
+#detailcompetences {
+
+  .ligne {
+	background-color: #3F4349;
+	height: 4px;
+	width: 80%;
+	margin: 2rem auto;
+	border-radius: 50px;
+  }
+
+  #competence {
+	display: flex;
+	font-size: 20px;
+
+	.photocompetence {
+	  width: 50%;
+	  text-align: center;
+	  align-self: center;
+
+	  img {
+		width: 70%;
+	  }
+	}
+
+	.infocompetence {
+	  width: 50%;
+	  color: #FFFFFF;
+
+	  h4 {
+		margin: 0 3rem 0 0;
+	  }
+	}
+  }
+
+  .competence2, .competence4, .competence6 {
+	flex-direction: row-reverse;
+
+	.infocompetence {
+	  direction: rtl;
+
+	  h4 {
+		margin: 0 0 0 3rem !important;
+	  }
+	}
+  }
+  .competence3{
+	.photocompetence {
+	  img {
+		width: 35% !important;
+	  }
+	}
+  }
+
+  .competence5, .competence6 {
+	.photocompetence {
+	  img {
+		width: 50% !important;
+	  }
+	}
+  }
+}

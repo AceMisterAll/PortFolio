@@ -10,6 +10,7 @@ import './styles/app.scss';
 import './styles/base.scss';
 import './styles/accueil.scss';
 import './styles/btssio.scss';
+import './styles/competences.scss';
 
 // start the Stimulus application
 import './bootstrap';
