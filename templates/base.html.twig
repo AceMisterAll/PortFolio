@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}PortFolio Allan{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         <link rel="stylesheet" href="{{ 'build/app.css' }}">
         <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-round.css' rel='stylesheet'>
@@ -21,7 +21,7 @@
                 <li><a class="nav-link" href="{{ path('btssio')}}">Le BTS SIO</a></li>
                 <li><a class="nav-link" href="">Stage</a></li>
                 <li><a class="nav-link" href="{{ path('competences') }}">Compétences</a></li>
-                <li><a class="nav-link" href="">Veille technologique</a></li>
+                <li><a class="nav-link" href="{{ path('veille_techno') }}">Veille technologique</a></li>
                 <li><a class="nav-link" href="">Contact</a></li>
             </ul>
         </div>
