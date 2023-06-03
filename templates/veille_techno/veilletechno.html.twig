@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <div id="maveille">
+        <div class="descriptionveilletechno">
+            <h1>Veille technologique</h1>
+            <h6>
+                Une veille technologique consiste à s'informer régulièrement et systématiquement
+                sur les nouveautés du secteur informatique, les inventions des concurrents ainsi
+                que les nouveaux techniques. Elle a pour but d’anticiper des problèmes que l'on
+                peut rencontrer dans notre domaine, ainsi que de découvrir de nouvelles
+                fonctionnalités, inventions, ....
+            </h6>
+        </div>
+        <div class="photoveille">
+            <img src="{{ asset('img/veilletechno/photoveilletechno.png') }}" alt="veillephoto">
+        </div>
+    </div>
+    <div id="veilletechno">
+        {% for unveilletechno in lesveilletechno %}
+        <div id="cardveilletechno" class="veilletechno1">
+            <h5>
+                {{ unveilletechno.titre }}
+            </h5>
+            <div class="ligneveilletechno"></div>
+            <div class="photoveilletechno">
+                <img src="{{ asset(unveilletechno.image) }}" alt="veilletechnoimage">
+            </div>
+            <p>
+                {{ unveilletechno.resume }}
+            </p>
+            <p>
+                <a href={{ unveilletechno.lienarticle }}>Lien de l'article</a>
+                {{ unveilletechno.datepublication | date("d/m/Y")}}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
