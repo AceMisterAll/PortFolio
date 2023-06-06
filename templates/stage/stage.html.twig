@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="stages">
+        <div class="titreliststage">
+            Mes stages
+        </div>
+        <div class="liststage">
+            <div class="stagepubert">
+                <img class="imgstage" src="{{ asset('img/stage/pubert/logo pubert.png') }}" alt="pubert">
+                <div class="titrestage">
+                    Stage de 1ére année
+                    au sein de l'entreprise
+                    <span>Pubert</span>
+                </div>
+            </div>
+            <div class="stagekline">
+                <img class="imgstage" src="{{ asset('img/stage/kline/logo kline.jpg') }}" alt="kline">
+                <div class="titrestage">
+                    Stage de 2ème année
+                    au sein de l'entreprise
+                    <span>K-line</span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

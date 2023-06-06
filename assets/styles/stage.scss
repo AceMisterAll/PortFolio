@@ -1,0 +1,37 @@
+.stages{
+  padding-top: 14rem;
+  text-align: center;
+  color: #E8E6E3;
+  font-family: sans-serif;
+
+  .titreliststage{
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+  }
+
+  .liststage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .stagepubert, .stagekline{
+      padding: 0 2rem 5rem 2rem;
+      width: 30rem;
+
+      .imgstage{
+        width: 30rem;
+        height: 17rem;
+      }
+        .titrestage{
+          background: rgba(21,23,24,0.8);
+          padding: 1rem 6rem;
+          font-size: 26px;
+
+          span{
+            font-weight: 600;
+          }
+        }
+    }
+  }
+}
