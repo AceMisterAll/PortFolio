@@ -15,36 +15,108 @@ html{
   scroll-behavior: smooth;
 }
 
-.navbar{
-  z-index: 1;
+#titrenavbar{
+  display: none;
+}
+
+.navbar {
   position: fixed;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
   color: #FFFFFF;
+  padding-top: 2rem;
+  transition: all 0.5s;
 
-  a{
-	text-decoration: none;
-	color: inherit;
+  #titrenavbar{
+    margin-top: 1.7rem;
   }
-  .titre{
-	margin: 0 1rem;
+
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 1rem 0 1rem 0;
+    font-size: 20px;
+    font-family: monospace;
   }
+
+  a:hover {
+    color: #FD6262;
+  }
+
+  .titre {
+    margin: 0 2rem;
+    font-size: 26px;
+  }
+
+  #triangle{
+    display: none;
+  }
+
   .menu{
 	margin: 0 1rem 0 1rem;
+    width: 100%;
+
 	.list{
 	  list-style: none;
 	  display: flex;
 	  gap: 25px;
+      float: right;
+
+      .bi-caret-down-fill:before, .btnsousliste{
+        display: none;
+      }
+
+      a{
+        display: block;
+      }
+
+      label{
+        display: block;
+        margin: 0;
+      }
 	}
+
+    .list li ul {
+      display: none;
+
+      a{
+        font-size: 15px;
+      }
+
+    }
+    .list li:hover ul {
+      display: block;
+    }
+  }
+
+  #btncontact{
+    background-color: #FD6262;
+    padding: 1rem 2.25rem;
+    border: 1px solid #FD6262;
+    border-radius: 5px;
+    color: #000000;
+  }
+
+  #btncontact:hover{
+    background-color: #141416;
+    color: #FFFFFF;
+    border:1px solid #FFFFFF;
   }
 }
 
+#navbar.hidden {
+  transform: translateY(-110px);
+}
 
 #btnliste , .navbar label{
   display:none;
+  margin: 1.7rem 2rem 1rem 2rem;
+
+  .gg-menu-round {
+    --ggs: 2;
+  }
 }
 
 .footer{
@@ -62,16 +134,69 @@ html{
   }
 }
 
-@media  screen and (max-width: 770px) {
+@media screen and (max-width: 1000px){
+  .navbar{
+    .menu{
+      width: 100%;
+    }
+  }
+}
+
+@media  screen and (max-width: 900px) {
+  #titrenavbar{
+    display: block;
+  }
+
+  #triangle{
+    margin: 0 1rem 0 auto;
+    display: block !important;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #151718;
+    opacity: 0.8;
+  }
+
   .menu{
 	width: 100%;
 	max-height: 0;
 	overflow: hidden;
 
 	.list{
+      margin: 0;
 	  flex-direction: column;
 	  align-items: center;
 	  padding: 20px;
+      background: #151718;
+      opacity: 0.8;
+      border-radius: 18px;
+
+      .btnsousliste{
+        display: none;
+      }
+
+      .btnsousliste:checked ~ ul{
+        display: block !important;
+      }
+
+      .btnsousliste:checked ~ label .bi-caret-down-fill::before{
+        rotate: 180deg;
+      }
+
+      li:hover ul {
+        display: none !important;
+      }
+
+      .bi-caret-down-fill{
+        display: flex;
+        cursor: pointer;
+      }
+      .bi-caret-down-fill::before{
+        display: flex !important;
+        align-self: center;
+        margin-right: 5px;
+      }
 	}
   }
 
