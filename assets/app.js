@@ -15,3 +15,4 @@ import './styles/veilletechno.scss';
 
 // start the Stimulus application
 import './bootstrap';
+import './controllers/base.js';
