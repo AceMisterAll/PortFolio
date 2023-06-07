@@ -5,7 +5,7 @@
 {% block body %}
     <div id="maveille">
         <div class="photoveille">
-            <img src="{{ asset('img/veilletechno/photoveilletechno.png') }}" alt="veillephoto">
+            <img src="{% if BASE_URL %}{{ BASE_URL }}/{% endif %}{{ asset('img/veilletechno/photoveilletechno.png') }}" alt="veillephoto">
         </div>
         <div class="descriptionveilletechno">
             <h1>Veille technologique</h1>
@@ -26,13 +26,13 @@
             </h5>
             <div class="ligneveilletechno"></div>
             <div class="photoveilletechno">
-                <img src="{{ asset(unveilletechno.image) }}" alt="veilletechnoimage">
+                <img src="{% if BASE_URL %}{{ BASE_URL }}/{% endif %}{{ asset(unveilletechno.image) }}" alt="veilletechnoimage">
             </div>
             <p>
                 {{ unveilletechno.resume }}
             </p>
             <p>
-                <a href={{ unveilletechno.lienarticle }}>Lien de l'article</a>
+                <a href={% if BASE_URL %}{{ BASE_URL }}/{% endif %}{{ unveilletechno.lienarticle }}>Lien de l'article</a>
                 {{ unveilletechno.datepublication | date("d/m/Y")}}
             </p>
         </div>
