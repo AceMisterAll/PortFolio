@@ -8,10 +8,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
         {% block stylesheets %}
-            <link href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}/build/app.css" rel="stylesheet" />
+            <link href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('build/app.css') }}" rel="stylesheet" />
         {% endblock %}
         {% block javascripts %}
-            <script src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}/build/app.js"></script>
+            <script src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('build/app.js') }}"></script>
         {% endblock %}
     </head>
     <body>
