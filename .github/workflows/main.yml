@@ -9,6 +9,7 @@ jobs:
     
     env:
       DATABASE_URL: "${{ secrets.DATABASE_URL }}"
+      BASE_URL: "${{ secrets.BASE_URL }}"
       
     strategy:
       fail-fast: true
