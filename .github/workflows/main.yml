@@ -33,6 +33,9 @@ jobs:
       - name : Composer Install
         run: composer install
         
+      - name : npm install
+        run: npm install
+        
       - name : npm run watch
         run: npm run watch
         
