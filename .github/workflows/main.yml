@@ -37,7 +37,7 @@ jobs:
         run: npm install
         
       - name : npm run watch
-        run: npm run watch
+        run: npm run build
         
       - name : Generate Static Dump
         run: bin/console -e prod stenope:build ./static
