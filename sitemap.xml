@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             <url>
             <loc>http://localhost/</loc>
-            <lastmod>2023-06-08T13:16:12+00:00</lastmod>            <priority>0</priority>            <changefreq>monthly</changefreq>
+            <lastmod>2023-06-08T13:22:38+00:00</lastmod>            <priority>0</priority>            <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/cv</loc>
-            <lastmod>2023-06-08T13:15:43+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2023-06-08T13:22:02+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/btssio</loc>
-            <lastmod>2023-06-08T13:16:12+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2023-06-08T13:22:38+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/competences</loc>
-            <lastmod>2023-06-08T13:16:12+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2023-06-08T13:22:38+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/stage</loc>
-            <lastmod>2023-06-08T13:16:12+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2023-06-08T13:22:38+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/stage/pubert</loc>
-            <lastmod>2023-06-08T13:16:12+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2023-06-08T13:22:38+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/veilletechno</loc>
-            <lastmod>2023-06-08T13:16:12+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2023-06-08T13:22:38+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
     </urlset>
