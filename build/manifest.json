@@ -1,10 +1,5 @@
 {
-  "build/app.css": "/build/app.25f18017.css",
-  "build/app.js": "/build/app.6a063eaa.js",
-  "build/runtime.js": "/build/runtime.9a71ee5d.js",
-  "build/751.1eb1c9cb.js": "/build/751.1eb1c9cb.js",
-  "build/images/cartemere.gif": "/build/images/cartemere.0c11c4c8.gif",
-  "build/images/background_body.jpg": "/build/images/background_body.8bceba4c.jpg",
-  "build/images/img-sisr.jpg": "/build/images/img-sisr.76e3e3b0.jpg",
-  "build/images/img-slam.jpg": "/build/images/img-slam.c14a3f86.jpg"
+  "build/app.css": "/build/app.61d92120.css",
+  "build/app.js": "/build/app.984e3611.js",
+  "build/runtime.js": "/build/runtime.8c9e366f.js"
 }
