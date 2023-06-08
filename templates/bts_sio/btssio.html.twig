@@ -18,7 +18,9 @@
 
     <div id="btsoption">
         <div id="optionslam" class="slam">
-            <div class="imgslam" ></div>
+            <div class="imgslam" >
+                <img src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/btssio/img-slam.jpg') }}" alt="imgslam">
+            </div>
             <div class="descriptionoption">
                 <h1>Option SLAM</h1>
                 <h5>
@@ -63,7 +65,9 @@
                     </ul>
                 </h5>
             </div>
-            <div class="imgsisr" ></div>
+            <div class="imgsisr" >
+                <img src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/btssio/img-sisr.jpg') }}" alt="imgsisr">
+            </div>
         </div>
     </div>
 {% endblock %}

@@ -4,6 +4,7 @@
 
 {% block body %}
     <div id="background">
+        <img src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/accueil/cartemere.gif') }}" alt="background_gif">
         <div class="grostitre">
             <h1>Allan chiron</h1>
             <h3>Bienvenue sur mon porte folio</h3>
@@ -16,7 +17,7 @@
                 A propos de moi
             </div>
             <div class="photo">
-                <img src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/CHIRON_Allan.jpg') }}" alt="photodeprofil">
+                <img src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/accueil/CHIRON_Allan.jpg') }}" alt="photodeprofil">
             </div>
         </div>
         <div class="info">
