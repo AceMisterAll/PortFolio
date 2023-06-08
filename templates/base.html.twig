@@ -29,7 +29,7 @@
                 </li>
                 <li>
                     <input type="checkbox" id="btnsousliste1" class="btnsousliste">
-                    <label for="btnsousliste1"><i class="bi bi-caret-down-fill"><a href='{{ path('accueil') }}#apropos'>Profil</a></i></label>
+                    <label for="btnsousliste1"><i class="bi bi-caret-down-fill"><a href='{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('accueil') }}#apropos'>Profil</a></i></label>
                     <ul>
                         <li><a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('accueil') }}#apropos">A propos</a></li>
                         <li><a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('cv') }}">CV</a></li>
@@ -38,7 +38,7 @@
                 </li>
                 <li>
                     <input type="checkbox" id="btnsousliste2" class="btnsousliste">
-                    <label for="btnsousliste2"><i class="bi bi-caret-down-fill"><a class="nav-link" href="{{ path('btssio')}}">Le BTS SIO</a></i></label>
+                    <label for="btnsousliste2"><i class="bi bi-caret-down-fill"><a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('btssio')}}">Le BTS SIO</a></i></label>
                     <ul>
                         <li><a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('btssio') }}#optionslam">OPTION SLAM</a></li>
                         <li><a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('btssio') }}#optionsisr">OPTION SISR</a></li>
@@ -46,7 +46,7 @@
                 </li>
                 <li>
                     <input type="checkbox" id="btnsousliste3" class="btnsousliste">
-                    <label for="btnsousliste3"><i class="bi bi-caret-down-fill"> <a class="nav-link" href="{{ path('stage') }}">Stages</a></i></label>
+                    <label for="btnsousliste3"><i class="bi bi-caret-down-fill"> <a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('stage') }}">Stages</a></i></label>
                     <ul>
                         <li><a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('stagepubert') }}">Stage Pubert</a></li>
                         <li><a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('stagekline') }}">Stage K-line</a></li>
