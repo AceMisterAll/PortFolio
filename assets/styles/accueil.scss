@@ -1,12 +1,14 @@
 #background{
-    background-image: url('../../public/img/accueil/cartemere.gif');
-    background-size: cover;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    img{
+        height: 100vh;
+    }
+
     .grostitre{
+        position: absolute;
         font-size: 30px;
         font-family: 'Roboto', sans-serif;
         color: #FFFFFF;
