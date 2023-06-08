@@ -8,7 +8,11 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
         {% block stylesheets %}
-            {% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ encore_entry_link_tags('app') }}
+            {% set scriptTags = encore_entry_link_tags('app') %}
+            {% if BASE_URL %}
+                {% set scriptTags = scriptTags|replace({'/build': BASE_URL~'/build'}) %}
+            {% endif %}
+            {{ scriptTags|raw }}
         {% endblock %}
     </head>
     <body>
@@ -66,7 +70,11 @@
         <a href="https://github.com/AceMisterAll"><i class="bi bi-github"></i></a>
     </footer>
     {% block javascripts %}
-        {% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ encore_entry_script_tags('app') }}
+        {% set scriptTags = encore_entry_script_tags('app') %}
+        {% if BASE_URL %}
+            {% set scriptTags = scriptTags|replace({'/build': BASE_URL~'/build'}) %}
+        {% endif %}
+        {{ scriptTags|raw }}
     {% endblock %}
     </body>
 
