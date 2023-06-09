@@ -21,7 +21,7 @@
 #apropos{
     color: #FFFFFF;
     display: flex;
-    height: 80vh;
+    height: auto;
 
     .titrephoto{
         width: 50%;
@@ -32,7 +32,7 @@
         }
 
         .photo{
-            margin: 5rem 0 0 13rem;
+            margin: 5rem 0 0 6rem;
             img{
                 width: 56%;
 
@@ -61,29 +61,28 @@
 }
 
 #formation{
-    display: flex;
     color: #FFFFFF;
-    height: 100vh;
+    height: auto;
 
     .titreformation{
         width: 30%;
         font-size: 56px;
-        margin: 7rem 0 1rem 8rem ;
+        margin: 7rem 0 4rem 8rem ;
     }
 
     .infoformation{
-        width: 70%;
-        display: flex;
+        display: grid;
         align-items: center;
-        margin: 12rem 0 1rem 0;
-        font-size: 1.25rem ;
+        font-size: 1.25rem;
+        grid-auto-flow: column;
+
 
         .infoleft, .inforight{
             display: inline-block;
             vertical-align: top;
 
             div{
-                margin: 0 3rem 3rem 0;
+                margin: 0 2rem 3rem 2rem;
             }
         }
 
@@ -93,6 +92,53 @@
             background-color: red;
             margin: 0 3rem 2rem 0;
             border-radius: 50px;
+        }
+    }
+}
+
+@media  screen and (max-width: 650px) {
+    #apropos{
+        display: block;
+        height: auto;
+
+        .titrephoto{
+            width: 100%;
+
+            .text{
+                margin: 3rem 2rem 3rem 2rem ;
+            }
+        }
+
+        .info{
+            width: auto;
+            padding: 4rem;
+            margin: 0;
+
+            .btn_cv{
+                margin: 3rem 0 0 0;
+            }
+        }
+    }
+    #formation{
+        display: block;
+
+        .titreformation{
+            margin: 3rem 2rem 3rem 2rem ;
+        }
+
+        .infoformation{
+            width: 100%;
+            margin: 0;
+
+            .ligne{
+                margin: 0 1rem 2rem 0.5rem;
+            }
+
+            .inforight, .infoleft{
+                div{
+                    margin: 0 1rem 3rem 1rem;
+                }
+            }
         }
     }
 }

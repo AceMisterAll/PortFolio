@@ -1,9 +1,10 @@
-/**{*/
-/*    border: 1px solid red;*/
-/*}*/
+//*{
+//    border: 1px solid red;
+//}
 
 body{
   margin: 0;
+  background: transparent;
 }
 
 html{
@@ -15,7 +16,7 @@ html{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
 }
@@ -31,8 +32,9 @@ html{
   justify-content: space-between;
   width: 100%;
   color: #FFFFFF;
-  padding-top: 2rem;
-  transition: all 0.5s;
+  padding-top: 1rem;
+  transition: all 1s;
+  z-index: 2;
 
   #titrenavbar{
     margin-top: 1.7rem;
@@ -62,6 +64,7 @@ html{
   .menu{
 	margin: 0 1rem 0 1rem;
     width: 100%;
+    z-index: 1;
 
 	.list{
 	  list-style: none;
@@ -112,7 +115,7 @@ html{
 }
 
 #navbar.hidden {
-  transform: translateY(-110px);
+  transform: translateY(-8rem);
 }
 
 #btnliste , .navbar label{
