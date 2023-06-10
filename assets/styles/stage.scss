@@ -116,6 +116,7 @@
 
       .descriptioninfo {
         width: 100%;
+        direction: ltr;
 
         h4 {
           margin: 0 0 0 0;
@@ -123,7 +124,111 @@
       }
 
       #descriptioninfo8, #descriptioninfo9{
-        margin-left: 0rem;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+//Page kline
+
+#stagekline {
+  padding-top: 10rem;
+
+  #info {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 4rem;
+    justify-content: center;
+
+    span{
+      color: #9E9689;
+    }
+
+    .photoinfo {
+      width: 50%;
+      text-align: center;
+      align-self: center;
+
+      img {
+        width: 80%;
+      }
+
+      .photoinfo3, .infophoto11\.2, .infophoto12{
+        width: 60%;
+      }
+
+      .photoinfo6{
+        width: 50%;
+      }
+    }
+
+    .descriptioninfo {
+      width: 50%;
+      color: #FFFFFF;
+      align-self: center;
+
+      h4 {
+        margin: 0 3rem 0 0;
+
+        .btndocs{
+          display: flex;
+          background-color: #FFFFFF;
+          color: #000000;
+          border: none;
+          padding: 1rem 2rem;
+          border-radius: 5px;
+          font-size: 20px;
+          margin: 1rem 0 1rem 0;
+          width: fit-content;
+          text-decoration: none;
+        }
+      }
+
+      .photoinfo7\.1{
+        width: 80%;
+      }
+    }
+
+    #descriptioninfo13{
+      margin-left: 3rem;
+    }
+  }
+
+  .info0, .info3, .info5, .info7,.info9, .info11{
+    flex-direction: row-reverse;
+
+    .descriptioninfo {
+      direction: rtl;
+
+      h4 {
+        margin: 0 0 0 3rem;
+      }
+    }
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  #stagekline {
+    #info {
+      flex-direction: column;
+
+      .photoinfo {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      .descriptioninfo {
+        width: 100%;
+        direction: ltr;
+
+        h4 {
+          margin: 0 0 0 0;
+        }
+      }
+
+      #descriptioninfo13{
+        margin-left: 0;
       }
     }
   }
