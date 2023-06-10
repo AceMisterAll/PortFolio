@@ -7,20 +7,24 @@
         </div>
         <div class="liststage">
             <div class="stagepubert">
-                <img class="imgstage" src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/stage/pubert/logo pubert.png') }}" alt="pubert">
-                <div class="titrestage">
-                    Stage de 1ére année
-                    au sein de l'entreprise
-                    <span>Pubert</span>
-                </div>
+                <a href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('stagepubert') }}">
+                    <img class="imgstage" src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/stage/pubert/logo pubert.png') }}" alt="pubert">
+                    <div class="titrestage">
+                        Stage de 1ére année
+                        au sein de l'entreprise
+                        <span>Pubert</span>
+                    </div>
+                </a>
             </div>
             <div class="stagekline">
-                <img class="imgstage" src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/stage/kline/logo kline.jpg') }}" alt="kline">
-                <div class="titrestage">
-                    Stage de 2ème année
-                    au sein de l'entreprise
-                    <span>K-line</span>
-                </div>
+                <a href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('stagekline') }}">
+                    <img class="imgstage" src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/stage/kline/logo kline.jpg') }}" alt="kline">
+                    <div class="titrestage">
+                        Stage de 2ème année
+                        au sein de l'entreprise
+                        <span>K-line</span>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
