@@ -13,6 +13,7 @@ import './styles/btssio.scss';
 import './styles/competences.scss';
 import './styles/veilletechno.scss';
 import './styles/stage.scss';
+import './styles/contact.scss';
 
 // start the Stimulus application
 import './controllers/base.js';

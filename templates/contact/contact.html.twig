@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+<div id="contact">
+    <div class="titrecontact">
+        <h1>Me contacter</h1>
+    </div>
+    <div class="formcontact">
+        <div class="mesreseaux">
+            <a href="https://www.instagram.com/allan_chiron/"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/allan_chiron"><i class="bi bi-twitter"></i></a>
+            <a href="http://www.linkedin.com/in/allan-chiron-700492229"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/AceMisterAll"><i class="bi bi-github"></i></a>
+        </div>
+        <div class="saisieinfo">
+            {{ form_start(form) }}
+                <div class="prenom">
+                    {{ form_row(form.prenom) }}
+                </div>
+                <div class="nom">
+                    {{ form_row(form.nom) }}
+                </div>
+                <div class="email">
+                    {{ form_row(form.mail) }}
+                </div>
+                <div class="telephone">
+                    {{ form_row(form.telephone) }}
+                </div>
+                <div class="message">
+                    {{ form_row(form.message) }}
+                    {{ form_end(form) }}
+                </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
