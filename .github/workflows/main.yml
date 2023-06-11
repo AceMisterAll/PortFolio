@@ -10,6 +10,7 @@ jobs:
     env:
       DATABASE_URL: "${{ secrets.DATABASE_URL }}"
       BASE_URL: "${{ secrets.BASE_URL }}"
+      MAILER_DSN: "${{ secrets.MAILER_DSN }}"
       
     strategy:
       fail-fast: true
