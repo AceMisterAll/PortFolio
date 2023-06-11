@@ -57,7 +57,7 @@
                 </li>
                 <li><a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('competences') }}">Compétences</a></li>
                 <li><a class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('veille_techno') }}">Veille technologique</a></li>
-                <li><a id="btncontact" class="nav-link" href="">Contact</a></li>
+                <li><a id="btncontact" class="nav-link" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('contact') }}">Contact</a></li>
             </ul>
         </div>
     </nav>

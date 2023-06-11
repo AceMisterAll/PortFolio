@@ -1,0 +1,135 @@
+#contact{
+  padding-top: 10rem;
+
+  .titrecontact{
+    text-align: center;
+    font-size: 2rem;
+    color: #FFFFFF;
+  }
+
+  .formcontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101112;
+    height: 30rem;
+    margin: 7%;
+    border-radius: 25px;
+
+    .mesreseaux{
+      color: #FFFFFF;
+      padding: 1rem;
+      margin: auto;
+      width: 40%;
+      text-align: center;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: center;
+
+      a{
+        color: #FFFFFF;
+        font-size: 2rem;
+        margin : 0.75rem;
+      }
+    }
+
+    .saisieinfo{
+      width: 60%;
+
+      form{
+        display:grid;
+        grid-template-columns: 200px 200px;
+        grid-row: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+          input{
+            width: 10rem;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            border-color: darkgray;
+            border-radius: 0.5rem;
+            background-color: #101112;
+            color: #FFFFFF;
+          }
+
+        textarea{
+          margin: 0.5rem;
+          border-color: darkgray;
+          border-radius: 0.5rem;
+          background-color: #101112;
+          color: #FFFFFF;
+          width: 100%;
+          height: 100px;
+        }
+
+        button{
+          width: 40%;
+          height: 40%;
+          padding: 1rem;
+          margin: 0.5rem;
+          border: none;
+          border-radius: 0.5rem;
+          background-color: #FD6262;
+          color: #FFFFFF;
+          font-family: monospace;
+          font-size: x-large;
+        }
+
+        button:hover{
+          cursor: pointer;
+        }
+
+        .message{
+          width: 200%;
+
+          div{
+            text-align-last: center;
+          }
+        }
+      }
+
+      div{
+        label{
+          color: #9E9689;
+          font-family: monospace;
+          font-size: x-large;
+        }
+      }
+    }
+  }
+}
+.footer{
+  display: none;
+}
+
+@media screen and (max-width: 1000px){
+  .mesreseaux{
+    display: none !important;
+  }
+  .formcontact{
+    .saisieinfo{
+      width: auto !important;
+    }
+  }
+  .footer{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 860px){
+  .mesreseaux{
+    display: none !important;
+  }
+  .formcontact{
+    .saisieinfo{
+      form{
+        display: block !important;
+
+        .message{
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
