@@ -78,3 +78,34 @@
 	}
   }
 }
+
+@media  screen and (max-width: 570px) {
+	#mescompetences {
+		.descriptioncompetences {
+			font-size: 25px;
+			width: 90%;
+			padding: 2rem 0 0 0;
+		}
+	}
+	#detailcompetences {
+		#competence{
+			display: block;
+
+			.photocompetence{
+				width: 100%;
+			}
+
+			.infocompetence{
+				width: 100%;
+
+				h2{
+					margin: 1.5rem 2rem;
+				}
+
+				h4{
+					margin: 0 2rem !important;
+				}
+			}
+		}
+	}
+}
