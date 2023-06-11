@@ -20,9 +20,8 @@
 #btsoption{
   width: 100%;
 
-  .slam, .sisr{
+  .option{
     display: flex;
-    height: 50vh;
   }
 
   .descriptionoption{
@@ -30,7 +29,8 @@
     text-align: center;
     background: transparent;
     color: cornsilk;
-    font-size: 20px;
+    font-size: 25px;
+    align-self: center;
 
     h5{
         line-height: 1.2rem;
@@ -50,5 +50,41 @@
       width: 100%;
       height: 100%;
     }
+  }
+}
+
+@media  screen and (max-width: 830px) {
+  #lebtssio {
+    font-size: 15px;
+    .descriptionbts {
+      width: 90%;
+    }
+  }
+
+  #btsoption {
+
+    .option{
+      justify-content: center;
+
+      .descriptionoption{
+        width: 90%;
+        margin-bottom: 2rem;
+
+        h5{
+            margin: 0 1rem 3rem 1rem;
+        }
+      }
+
+      .imgslam, .imgsisr{
+        display: none;
+      }
+    }
+  }
+}
+
+@media  screen and (max-width: 500px) {
+  #lebtssio {
+    font-size: 12px;
+    padding-top: 2rem;
   }
 }
