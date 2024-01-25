@@ -4,7 +4,7 @@
 
 {% block body %}
     <div id="background">
-        <img src="{% if     BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/accueil/cartemere.gif') }}" alt="background_gif">
+        <img src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/accueil/cartemere.gif') }}" alt="background_gif">
         <div class="grostitre">
             <h1>Allan chiron</h1>
             <h3>Bienvenue sur mon port folio</h3>
@@ -16,15 +16,18 @@
             <div class="text">
                 A propos de moi
             </div>
-            <div class="photo">
-                <img src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/accueil/CHIRON_Allan.jpg') }}" alt="photodeprofil">
-            </div>
         </div>
-        <div class="info">
-            Je m’appelle Allan Chiron,  je suis actuellement en BTS SIO (Services Informatiques aux Organisations) spécialité SLAM (Solutions logicielles et applications métiers) au Lycée Savary de Mauléon au Sable d'Olonne.
+        <div class="photo">
+            <img src="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ asset('img/accueil/CHIRON_Allan.jpg') }}" alt="photodeprofil">
 
-            Je suis motivé et rigoureux, j'aime le travail en équipe et je suis passionné par le domaine de l'informatique
-            <a  class="btn_cv" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('cv') }}">Télécharger mon CV</a>
+            <div class="info">
+                <div class="texte">
+                    Je m’appelle Allan Chiron,  je suis actuellement en BTS SIO (Services Informatiques aux Organisations)
+                    spécialité SLAM (Solutions logicielles et applications métiers) au Lycée Savary de Mauléon au Sable d'Olonne.
+                    Je suis motivé et rigoureux, j'aime le travail en équipe et je suis passionné par le domaine de l'informatique
+                </div>
+                <a  class="btn_cv" href="{% if BASE_URL %}{{ BASE_URL }}{% endif %}{{ path('cv') }}">Télécharger mon CV</a>
+            </div>
         </div>
     </div>
     <div id="formation">
@@ -33,6 +36,11 @@
         </div>
         <div class="infoformation">
             <div class="infoleft">
+                <div class="dateville">
+                    2022 - 2023
+                    <br>
+                    Angers
+                </div>
                 <div class="dateville">
                     2022 - 2023
                     <br>
@@ -56,6 +64,11 @@
             </div>
             <div class="ligne"></div>
             <div class="inforight">
+                <div class="etablissement">
+                    Licence Pro Metiers de l’informatique : application web
+                    <br>
+                    Université d'Angers
+                </div>
                 <div class="etablissement">
                     2ème année de BTS SIO ( Service aux Organisations )
                     <br>
