@@ -2,50 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             <url>
             <loc>http://localhost/</loc>
-            <lastmod>2024-01-25T10:12:37+00:00</lastmod>            <priority>0</priority>            <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:52+00:00</lastmod>            <priority>0</priority>            <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/cv</loc>
-            <lastmod>2024-01-25T10:12:07+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:20+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/btssio</loc>
-            <lastmod>2024-01-25T10:12:37+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:52+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/competences</loc>
-            <lastmod>2024-01-25T10:12:37+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:52+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/contact</loc>
-            <lastmod>2024-01-25T10:12:37+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:53+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/stage</loc>
-            <lastmod>2024-01-25T10:12:37+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:53+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/stage/pubert</loc>
-            <lastmod>2024-01-25T10:12:37+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:53+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/stage/kline</loc>
-            <lastmod>2024-01-25T10:12:37+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:53+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/docinstallation</loc>
-            <lastmod>2024-01-25T10:12:07+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:20+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/docutilisation</loc>
-            <lastmod>2024-01-25T10:12:07+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:20+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/docpresentation</loc>
-            <lastmod>2024-01-25T10:12:07+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:20+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
             <url>
             <loc>http://localhost/veilletechno</loc>
-            <lastmod>2024-01-25T10:12:37+00:00</lastmod>                        <changefreq>monthly</changefreq>
+            <lastmod>2024-02-06T10:59:53+00:00</lastmod>                        <changefreq>monthly</changefreq>
         </url>
     </urlset>
