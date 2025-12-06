@@ -14,11 +14,11 @@ class AccueilController extends AbstractController
 	{
 		return $this->render('accueil/index.html.twig', []);
 	}
-	#[Route('/cv', name: 'cv')]
+	#[Route('/CV_Allan_Chiron.pdf', name: 'cv')]
 	public function cv(): Response
 	{
 		$pdfcv = $this->getParameter('kernel.project_dir') . '/public/pdf/CV_Allan_Chiron.pdf';
 		return
-			$this->file($pdfcv, 'CV_Allan_Chiron.pdf', ResponseHeaderBag::DISPOSITION_ATTACHMENT);
+			$this->file($pdfcv, 'CV_Allan_Chiron.pdf', ResponseHeaderBag::DISPOSITION_INLINE);
 	}
 }
