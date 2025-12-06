@@ -14,7 +14,7 @@ class AccueilController extends AbstractController
 	{
 		return $this->render('accueil/index.html.twig', []);
 	}
-	#[Route('/CV_Allan_Chiron.pdf', name: 'cv')]
+	#[Route('/CV_Allan_Chiron.pdf', name: 'CV_Allan_Chiron.pdf')]
 	public function cv(): Response
 	{
 		$pdfcv = $this->getParameter('kernel.project_dir') . '/public/pdf/CV_Allan_Chiron.pdf';
